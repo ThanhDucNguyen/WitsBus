@@ -12,6 +12,9 @@ public class Seat implements Serializable {
     @Column(name = "seat_id")
     private Long id;
 
+    @Column(name = "seat_type")
+    private String type;
+
     @Column(name = "seat_name")
     private String name;
 
@@ -38,6 +41,14 @@ public class Seat implements Serializable {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 
     public String getName() {

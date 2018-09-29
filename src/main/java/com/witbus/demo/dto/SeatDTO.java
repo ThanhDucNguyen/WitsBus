@@ -2,21 +2,14 @@ package com.witbus.demo.dto;
 
 public class SeatDTO {
     private Long id;
+    private String type;
+
+
+
     private String name;
     private Boolean status;
     private Integer price;
     private BusDTO bus;
-
-    @Override
-    public String toString() {
-        return "SeatDTO{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", status=" + status +
-                ", price=" + price +
-                ", bus=" + bus +
-                '}';
-    }
 
     public Long getId() {
         return id;
@@ -24,6 +17,25 @@ public class SeatDTO {
 
     public void setId(Long id) {
         this.id = id;
+    }
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    @Override
+    public String toString() {
+        return "SeatDTO{" +
+                "id=" + id +
+                ", type='" + type + '\'' +
+                ", name='" + name + '\'' +
+                ", status=" + status +
+                ", price=" + price +
+                ", bus=" + bus +
+                '}';
     }
 
     public String getName() {
